@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Refuge-aid</title>
+  <link rel="icon" type="image/png" href="img/icon.png" id="icon">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <div><a href="#"><img src="img/logo.png"></a></div>
+    <ul>
+      <a href="#about-us">
+        <li>About Us</li>
+      </a>
+      <a href="#Our-Services">
+        <li>Our Services</li>
+      </a>
+      <a href="#news">
+        <li>News</li>
+      </a>
+      <a href="#Contact-us">
+        <li>Contact Us</li>
+      </a>
+    </ul>
+  </header>
+
+  <section id="about-us">
+    <h2 class="title">About Us</h2>
+    <p>At refuge aid, we believe that every individual deserves a safe and secure home. Unfortunately, millions of
+      people around the world have been forced to flee their homes due to conflict, persecution, and other forms of
+      violence. As a result, they are often left with no <span id="dots">...</span><span id="more"
+        class="hidden-text">choice but to seek refuge in a foreign land.
+
+        We are an organization that is dedicated to helping refugees rebuild their lives and regain their independence.
+        Our team of dedicated volunteers works tirelessly to provide essential support and assistance to refugees in
+        need. From providing emergency aid and shelter to helping refugees find employment and access education, we are
+        committed to helping refugees overcome the many challenges they face.
+
+        At the heart of our work is a deep commitment to building a world where everyone has the opportunity to live a
+        life of dignity and respect. We believe that by working together, we can create a brighter future for refugees
+        and help them to build a new life in a safe and welcoming community.</span></p>
+    <button onclick="myFunction()" id="myBtn">Read more</button>
+    <div class="photos">
+      <img src="img/refugee6.png" alt="refugee" class="ref">
+      <img src="img/refugee1.jpg" alt="refugee" class="ref">
+    </div>
+  </section>
+
+  <section id="Our-Services">
+    <h2 class="title">Our Services</h2>
+    <div class="content">
+      <div class="box" id="home">
+        <img src="img/home.jpg">
+        <div class="text">
+          <h2>Home</h2>
+          <p>House and a place to live</p>
+        </div>
+      </div>
+      <div class="box" id="home">
+        <img src="img/health.png">
+        <div class="text">
+          <h2>Health</h2>
+          <p>We provide complete health care</p>
+        </div>
+      </div>
+      <div class="box" id="home">
+        <img src="img/job.jpg">
+        <div class="text">
+          <h2>Job</h2>
+          <p>Jobs so you can work and earn money</p>
+        </div>
+      </div>
+      <div class="box" id="home">
+        <img src="img/legal.png">
+        <div class="text">
+          <h2>Legal advice</h2>
+          <p>We provide legal advice</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="news" id="news">
+    <h2 class="title">News</h2>
+    <div class="content">
+      <div class="new">
+        <img src="img/refugees_8.jpg" alt="refuge">
+        <p>Egypt hosts around 300,000 registered asylum seekers and refugees from 55 different countries, the majority
+          of whom are from Syria followed by Sudan, South Sudan, Eritrea, Ethiopia, Yemen and Somalia.</p>
+      </div>
+      <div class="new">
+        <img src="img/refugee7.jpg" alt="refuge">
+        <p>Egypt hosts around 300,000 registered asylum seekers and refugees from 55 different countries, the majority
+          of whom are from Syria followed by Sudan, South Sudan, Eritrea, Ethiopia, Yemen and Somalia.</p>
+      </div>
+      <div>
+
+      </div>
+    </div>
+
+  </section>
+  <section class="footer" id="Contact-us">
+    <h2>Contact us</h2>
+    <div class="Contact-us">
+      <ul>
+        <li><i class="fa-solid fa-location-dot"></i>
+          <p> ****** , *** , ***</p>
+        </li>
+        <li><a href="mailto:hazemwork150@gmail.com"><i class="fa-regular fa-envelope"></i>
+            <p> hazemwork150@gmail.com</p>
+          </a></li>
+        <li><i class="fa-brands fa-whatsapp"></i>
+          <p>+20 000 000 0000</p>
+        </li>
+        <li></li>
+      </ul>
+
+    </div>
+  </section>
+
+  <script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+      }
+    }
+  </script>
+</body>
+
+</html>
